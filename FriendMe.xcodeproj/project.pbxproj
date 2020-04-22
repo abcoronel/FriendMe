@@ -3,16 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40137E94E32BD7A41EE53165 /* Pods_FriendMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B60331590205EA834321E45C /* Pods_FriendMe.framework */; };
 		A05808D92450C2E40087F99D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05808D82450C2E40087F99D /* AppDelegate.swift */; };
 		A05808DB2450C2E40087F99D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05808DA2450C2E40087F99D /* SceneDelegate.swift */; };
 		A05808DD2450C2E40087F99D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05808DC2450C2E40087F99D /* ContentView.swift */; };
 		A05808DF2450C2E70087F99D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A05808DE2450C2E70087F99D /* Assets.xcassets */; };
 		A05808E22450C2E70087F99D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A05808E12450C2E70087F99D /* Preview Assets.xcassets */; };
 		A05808E52450C2E70087F99D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A05808E32450C2E70087F99D /* LaunchScreen.storyboard */; };
+		A05808ED2450C9C80087F99D /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05808EC2450C9C80087F99D /* MyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		A05808E12450C2E70087F99D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A05808E42450C2E70087F99D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A05808E62450C2E70087F99D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A05808EC2450C9C80087F99D /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		B60331590205EA834321E45C /* Pods_FriendMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FriendMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E74482D5724F626666658E40 /* Pods-FriendMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendMe.release.xcconfig"; path = "Target Support Files/Pods-FriendMe/Pods-FriendMe.release.xcconfig"; sourceTree = "<group>"; };
+		F551C84D45A8441F19003445 /* Pods-FriendMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendMe.debug.xcconfig"; path = "Target Support Files/Pods-FriendMe/Pods-FriendMe.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40137E94E32BD7A41EE53165 /* Pods_FriendMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				A05808D72450C2E40087F99D /* FriendMe */,
 				A05808D62450C2E40087F99D /* Products */,
+				F81A194D0FDBDC28434A9471 /* Pods */,
+				F10D319B1F96C4BC2EF1EC0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +68,7 @@
 				A05808D82450C2E40087F99D /* AppDelegate.swift */,
 				A05808DA2450C2E40087F99D /* SceneDelegate.swift */,
 				A05808DC2450C2E40087F99D /* ContentView.swift */,
+				A05808EC2450C9C80087F99D /* MyViewController.swift */,
 				A05808DE2450C2E70087F99D /* Assets.xcassets */,
 				A05808E32450C2E70087F99D /* LaunchScreen.storyboard */,
 				A05808E62450C2E70087F99D /* Info.plist */,
@@ -75,6 +85,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F10D319B1F96C4BC2EF1EC0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B60331590205EA834321E45C /* Pods_FriendMe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F81A194D0FDBDC28434A9471 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F551C84D45A8441F19003445 /* Pods-FriendMe.debug.xcconfig */,
+				E74482D5724F626666658E40 /* Pods-FriendMe.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A05808E92450C2E70087F99D /* Build configuration list for PBXNativeTarget "FriendMe" */;
 			buildPhases = (
+				B787D04B83CF504D580B4132 /* [CP] Check Pods Manifest.lock */,
 				A05808D12450C2E40087F99D /* Sources */,
 				A05808D22450C2E40087F99D /* Frameworks */,
 				A05808D32450C2E40087F99D /* Resources */,
+				32C3B12392DBB1858FF65C1D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,6 +170,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		32C3B12392DBB1858FF65C1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FriendMe/Pods-FriendMe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FriendMe/Pods-FriendMe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FriendMe/Pods-FriendMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B787D04B83CF504D580B4132 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FriendMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A05808D12450C2E40087F99D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -148,6 +219,7 @@
 			files = (
 				A05808D92450C2E40087F99D /* AppDelegate.swift in Sources */,
 				A05808DB2450C2E40087F99D /* SceneDelegate.swift in Sources */,
+				A05808ED2450C9C80087F99D /* MyViewController.swift in Sources */,
 				A05808DD2450C2E40087F99D /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +354,7 @@
 		};
 		A05808EA2450C2E70087F99D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F551C84D45A8441F19003445 /* Pods-FriendMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -289,6 +362,7 @@
 				DEVELOPMENT_TEAM = BUBMYLLJ9Q;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FriendMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,6 +376,7 @@
 		};
 		A05808EB2450C2E70087F99D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E74482D5724F626666658E40 /* Pods-FriendMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,6 +384,7 @@
 				DEVELOPMENT_TEAM = BUBMYLLJ9Q;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FriendMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
